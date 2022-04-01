@@ -1,0 +1,5 @@
+(library
+ (name lib)
+ (public_name ddream.lib)
+ (libraries dream secp256k1 digestif)
+ (preprocess (pps lwt_ppx)))

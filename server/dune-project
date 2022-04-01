@@ -1,0 +1,43 @@
+(lang dune 2.9)
+
+(name ddream)
+
+(version 0.1)
+
+(maintainers "")
+
+(generate_opam_files true)
+
+(package
+ (name ddream)
+ (synopsis "Dream X ECDSA")
+ (description "Dream X ECDSA")
+ (depends
+  (alcotest :with-test)
+  (dune
+   (and
+    :build
+    (>= 2.9)))
+  (secp256k1
+   (>= 0.4.1))
+  (digestif
+   (>= 1.1.0))
+  (dream
+   (>= 1.0.0~alpha4))
+  (caqti-driver-sqlite3
+    (>= 1.7.0))
+  )
+)
+
+(package
+ (name ddream-dev)
+ (synopsis "Dev package")
+ (description "Dev package")
+ (depends
+  (ocamlformat
+   (>= 0.20))
+  (ocamlformat-rpc
+   (>= 0.19))
+  (ocaml-lsp-server
+   (>= 1.10.3))
+ ))

@@ -1,0 +1,8 @@
+(executable
+ (public_name ddream)
+ (package ddream)
+ (name main)
+ (libraries dream caqti-driver-sqlite3 ddream.lib)
+)
+
+ 
